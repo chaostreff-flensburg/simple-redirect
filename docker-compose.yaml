@@ -1,0 +1,8 @@
+services:
+  app: 
+    environment:
+      REDIRECT_URL: "https://chaos-stipendien.de"
+    build: .
+    ports:
+      - "3000:3000"
+    command: node redirect.js
